@@ -1,0 +1,750 @@
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camping del Monasterio | Paquetes de alquiler y uso</title>
+  <meta
+    name="description"
+    content="Paquetes de alquiler y uso del Camping del Monasterio. Reservá online experiencias para familias, escuelas, scouts y trekking."
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="Ir al inicio">
+        <img src="assets/img/logo.jpg" alt="Logo Camping del Monasterio" class="brand-logo" />
+        <div class="brand-text">
+          <span class="brand-kicker">Camping</span>
+          <strong class="brand-title">del Monasterio</strong>
+        </div>
+      </a>
+
+      <div class="header-actions">
+        <nav class="social-nav" aria-label="Redes sociales">
+          <a href="https://instagram.com/" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://tiktok.com/" target="_blank" rel="noopener" class="social-btn" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="https://facebook.com/" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://wa.me/543816150488" target="_blank" rel="noopener" class="social-btn social-btn--wa" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </nav>
+
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Cambiar tema">
+          <span class="theme-icon sun" aria-hidden="true"><i class="fa-solid fa-sun"></i></span>
+          <span class="theme-switch">
+            <span class="theme-thumb"></span>
+          </span>
+          <span class="theme-icon moon" aria-hidden="true"><i class="fa-solid fa-moon"></i></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="pill">Paquetes de alquiler y uso</span>
+          <h1>Experiencias en la naturaleza para grupos, familias, escuelas y scouts</h1>
+          <p>
+            Reservá tu paquete ideal en el <strong>Camping del Monasterio</strong>.
+            Fechas corridas según la duración de cada pack, con check-in a las 11:00 hs
+            y check-out a las 10:00 hs.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#paquetes" class="btn btn-primary">Ver paquetes</a>
+            <a href="#redes" class="btn btn-secondary">Explorar redes</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card__badge">Reserva online</div>
+          <h3>Proceso simple y rápido</h3>
+          <ul class="hero-list">
+            <li>Elegí tu paquete</li>
+            <li>Consultá qué incluye</li>
+            <li>Seleccioná fecha de check-in</li>
+            <li>Calculamos check-out y total automáticamente</li>
+            <li>Elegí pago total o seña del 50%</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="paquetes">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Nuestros paquetes</span>
+          <h2>Elegí la experiencia ideal</h2>
+          <p>Cinco opciones para distintos grupos, edades y tipos de estadía.</p>
+        </div>
+
+        <div class="slider-wrap">
+          <button class="slider-arrow prev" data-target="packagesTrack" aria-label="Anterior">‹</button>
+
+          <div class="slider-track cards-4 autoplay-slider" id="packagesTrack">
+            <article class="package-card">
+              <div class="package-media poster-media">
+                <img src="assets/img/pack-scout.jpg" alt="Campamento Scout" />
+                <span class="package-badge">Reserva exclusiva del predio</span>
+              </div>
+              <div class="package-body">
+                <h3>Campamento Scout</h3>
+                <p class="package-meta">5 días / 4 noches</p>
+                <p class="package-desc">
+                  Naturaleza, aventura y amistad en una experiencia grupal inolvidable.
+                </p>
+                <div class="package-pricing is-per-person">
+                  <span>Por persona</span>
+                  <strong>Adultos $150.000</strong>
+                  <strong>Niños y jóvenes $130.000</strong>
+                </div>
+                <div class="package-footer">
+                  <button
+                    class="btn btn-secondary include-btn"
+                    data-include-title="Campamento Scout"
+                    data-include-list='["Reserva exclusiva del predio","5 días / 4 noches","Uso de zona de acampe","Espacios para fogón","Naturaleza, aventura y actividades grupales","Ingreso 11:00 hs y salida 10:00 hs"]'
+                  >
+                    Incluye
+                  </button>
+
+                  <button
+                    class="btn btn-primary reserve-btn"
+                    data-package-id="scout"
+                    data-package-title="Campamento Scout"
+                    data-package-days="5"
+                    data-package-nights="4"
+                    data-pricing-mode="per_person"
+                    data-adult-price="150000"
+                    data-youth-price="130000"
+                  >
+                    Reservar
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="package-card">
+              <div class="package-media poster-media">
+                <img src="assets/img/pack-trekking.jpg" alt="Aventura Trekking" />
+                <span class="package-badge">Senderos naturales y guía</span>
+              </div>
+              <div class="package-body">
+                <h3>Aventura Trekking</h3>
+                <p class="package-meta">2 días / 1 noche</p>
+                <p class="package-desc">
+                  Trekking de bajo nivel, zona de acampe y conexión plena con la naturaleza.
+                </p>
+                <div class="package-pricing is-per-person">
+                  <span>Por persona</span>
+                  <strong>Adultos $150.000</strong>
+                  <strong>Niños y jóvenes $130.000</strong>
+                </div>
+                <div class="package-footer">
+                  <button
+                    class="btn btn-secondary include-btn"
+                    data-include-title="Aventura Trekking"
+                    data-include-list='["2 días / 1 noche","Zona de acampe","Guía","Senderos naturales","Visita al monasterio","Trekking de bajo nivel hasta el río","Ingreso 11:00 hs y salida 10:00 hs"]'
+                  >
+                    Incluye
+                  </button>
+
+                  <button
+                    class="btn btn-primary reserve-btn"
+                    data-package-id="trekking"
+                    data-package-title="Aventura Trekking"
+                    data-package-days="2"
+                    data-package-nights="1"
+                    data-pricing-mode="per_person"
+                    data-adult-price="150000"
+                    data-youth-price="130000"
+                  >
+                    Reservar
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="package-card">
+              <div class="package-media poster-media">
+                <img src="assets/img/pack-escolar.jpg" alt="Campamento Escolar" />
+                <span class="package-badge">Pack 3x2</span>
+              </div>
+              <div class="package-body">
+                <h3>Campamento Escolar</h3>
+                <p class="package-meta">3 días / 2 noches</p>
+                <p class="package-desc">
+                  Actividades educativas, juegos al aire libre y fogón en un entorno seguro.
+                </p>
+                <div class="package-pricing is-per-person">
+                  <span>Por persona</span>
+                  <strong>Adultos $150.000</strong>
+                  <strong>Niños y jóvenes $130.000</strong>
+                </div>
+                <div class="package-footer">
+                  <button
+                    class="btn btn-secondary include-btn"
+                    data-include-title="Campamento Escolar"
+                    data-include-list='["3 días / 2 noches","Zona de acampe segura","Actividades educativas","Juegos y fogón","Entorno natural para grupos escolares","Ingreso 11:00 hs y salida 10:00 hs"]'
+                  >
+                    Incluye
+                  </button>
+
+                  <button
+                    class="btn btn-primary reserve-btn"
+                    data-package-id="escolar"
+                    data-package-title="Campamento Escolar"
+                    data-package-days="3"
+                    data-package-nights="2"
+                    data-pricing-mode="per_person"
+                    data-adult-price="150000"
+                    data-youth-price="130000"
+                  >
+                    Reservar
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="package-card">
+              <div class="package-media poster-media">
+                <img src="assets/img/pack-finde.jpg" alt="Fines de Semana de Descanso" />
+                <span class="package-badge">Pasar el día en familia</span>
+              </div>
+              <div class="package-body">
+                <h3>Fines de Semana de Descanso</h3>
+                <p class="package-meta">1 día</p>
+                <p class="package-desc">
+                  Uso del camping, descanso al aire libre y plan ideal para compartir en familia.
+                </p>
+                <div class="package-pricing">
+                  <span>Pack fijo</span>
+                  <strong>$90.000</strong>
+                </div>
+                <div class="package-footer">
+                  <button
+                    class="btn btn-secondary include-btn"
+                    data-include-title="Fines de Semana de Descanso"
+                    data-include-list='["Uso del camping","Pasar el día en familia","Almuerzo","Postre","Opciones para 2 adultos o 2 adultos y 2 niños"]'
+                  >
+                    Incluye
+                  </button>
+
+                  <button
+                    class="btn btn-primary reserve-btn"
+                    data-package-id="finde"
+                    data-package-title="Fines de Semana de Descanso"
+                    data-package-days="1"
+                    data-package-nights="0"
+                    data-pricing-mode="fixed"
+                    data-package-price="90000"
+                  >
+                    Reservar
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="package-card">
+              <div class="package-media poster-media">
+                <img src="assets/img/pack-familiar.jpg" alt="Pack Familiar" />
+                <span class="package-badge">Ideal para familias</span>
+              </div>
+              <div class="package-body">
+                <h3>Pack Familiar</h3>
+                <p class="package-meta">2 días / 1 noche</p>
+                <p class="package-desc">
+                  Una escapada corta para relajarse, compartir y disfrutar del predio completo.
+                </p>
+                <div class="package-pricing">
+                  <span>Pack fijo</span>
+                  <strong>$160.000</strong>
+                </div>
+                <div class="package-footer">
+                  <button
+                    class="btn btn-secondary include-btn"
+                    data-include-title="Pack Familiar"
+                    data-include-list='["2 días / 1 noche","Uso del predio","Zona de descanso","Espacios al aire libre","Ideal para grupos familiares","Ingreso 11:00 hs y salida 10:00 hs"]'
+                  >
+                    Incluye
+                  </button>
+
+                  <button
+                    class="btn btn-primary reserve-btn"
+                    data-package-id="familiar"
+                    data-package-title="Pack Familiar"
+                    data-package-days="2"
+                    data-package-nights="1"
+                    data-pricing-mode="fixed"
+                    data-package-price="160000"
+                  >
+                    Reservar
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <button class="slider-arrow next" data-target="packagesTrack" aria-label="Siguiente">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="redes">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">TikTok</span>
+          <h2>Videos destacados</h2>
+          <p>Slider visual con apertura en popup y reproducción embebida.</p>
+        </div>
+
+        <div class="slider-wrap">
+          <button class="slider-arrow prev" data-target="tiktokTrack" aria-label="Anterior">‹</button>
+          <div class="slider-track cards-4 autoplay-slider" id="tiktokTrack">
+            <article class="media-card media-card--video">
+              <button
+                class="media-open"
+                data-video-url="https://www.tiktok.com/@scout2015/video/6718335390845095173"
+                data-video-title="Vida en el camping"
+                type="button"
+              >
+                <img src="assets/img/tiktok-1.jpg" alt="Vida en el camping" />
+                <span class="play-badge"><i class="fa-solid fa-play"></i></span>
+              </button>
+              <div class="media-card__body">
+                <h3>Vida en el camping</h3>
+              </div>
+            </article>
+
+            <article class="media-card media-card--video">
+              <button
+                class="media-open"
+                data-video-url="https://www.tiktok.com/@tiktok/video/6829267836783971589"
+                data-video-title="Fogón al atardecer"
+                type="button"
+              >
+                <img src="assets/img/tiktok-2.jpg" alt="Fogón al atardecer" />
+                <span class="play-badge"><i class="fa-solid fa-play"></i></span>
+              </button>
+              <div class="media-card__body">
+                <h3>Fogón al atardecer</h3>
+              </div>
+            </article>
+
+            <article class="media-card media-card--video">
+              <button
+                class="media-open"
+                data-video-url="https://www.tiktok.com/@nba/video/7304447164478942510"
+                data-video-title="Trekking y río"
+                type="button"
+              >
+                <img src="assets/img/tiktok-3.jpg" alt="Trekking y río" />
+                <span class="play-badge"><i class="fa-solid fa-play"></i></span>
+              </button>
+              <div class="media-card__body">
+                <h3>Trekking y río</h3>
+              </div>
+            </article>
+
+            <article class="media-card media-card--video">
+              <button
+                class="media-open"
+                data-video-url="https://www.tiktok.com/@tiktok/video/6829267836783971589"
+                data-video-title="Aventura en grupo"
+                type="button"
+              >
+                <img src="assets/img/tiktok-4.jpg" alt="Aventura en grupo" />
+                <span class="play-badge"><i class="fa-solid fa-play"></i></span>
+              </button>
+              <div class="media-card__body">
+                <h3>Aventura en grupo</h3>
+              </div>
+            </article>
+          </div>
+          <button class="slider-arrow next" data-target="tiktokTrack" aria-label="Siguiente">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="instagram">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Instagram</span>
+          <h2>Últimas publicaciones</h2>
+          <p>Slider preparado para mostrar publicaciones destacadas.</p>
+        </div>
+
+        <div class="slider-wrap">
+          <button class="slider-arrow prev" data-target="instagramTrack" aria-label="Anterior">‹</button>
+          <div class="slider-track cards-4 autoplay-slider" id="instagramTrack">
+            <article class="media-card">
+              <a href="https://instagram.com/" target="_blank" rel="noopener">
+                <img src="assets/img/insta-1.jpg" alt="Campamento de verano" />
+              </a>
+              <div class="media-card__body">
+                <h3>Campamento de verano</h3>
+              </div>
+            </article>
+
+            <article class="media-card">
+              <a href="https://instagram.com/" target="_blank" rel="noopener">
+                <img src="assets/img/insta-3.jpg" alt="Naturaleza y descanso" />
+              </a>
+              <div class="media-card__body">
+                <h3>Naturaleza y descanso</h3>
+              </div>
+            </article>
+
+            <article class="media-card">
+              <a href="https://instagram.com/" target="_blank" rel="noopener">
+                <img src="assets/img/insta-3.jpg" alt="Naturaleza y descanso" />
+              </a>
+              <div class="media-card__body">
+                <h3>Naturaleza y descanso</h3>
+              </div>
+            </article>
+
+            <article class="media-card">
+              <a href="https://instagram.com/" target="_blank" rel="noopener">
+                <img src="assets/img/insta-3.jpg" alt="Naturaleza y descanso" />
+              </a>
+              <div class="media-card__body">
+                <h3>Naturaleza y descanso</h3>
+              </div>
+            </article>
+
+            <article class="media-card">
+              <a href="https://instagram.com/" target="_blank" rel="noopener">
+                <img src="assets/img/insta-2.jpg" alt="Actividades grupales" />
+              </a>
+              <div class="media-card__body">
+                <h3>Actividades grupales</h3>
+              </div>
+            </article>
+
+            <article class="media-card">
+              <a href="https://instagram.com/" target="_blank" rel="noopener">
+                <img src="assets/img/insta-3.jpg" alt="Naturaleza y descanso" />
+              </a>
+              <div class="media-card__body">
+                <h3>Naturaleza y descanso</h3>
+              </div>
+            </article>
+
+            <article class="media-card">
+              <a href="https://instagram.com/" target="_blank" rel="noopener">
+                <img src="assets/img/insta-4.jpg" alt="Fogón y campamento" />
+              </a>
+              <div class="media-card__body">
+                <h3>Fogón y campamento</h3>
+              </div>
+            </article>
+          </div>
+          <button class="slider-arrow next" data-target="instagramTrack" aria-label="Siguiente">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="blog">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Blog</span>
+          <h2>Novedades y noticias</h2>
+          <p>Artículos destacados del Camping del Monasterio.</p>
+        </div>
+
+        <div class="slider-wrap">
+          <button class="slider-arrow prev" data-target="blogTrack" aria-label="Anterior">‹</button>
+          <div class="slider-track cards-4 autoplay-slider" id="blogTrack">
+            <article class="media-card blog-card">
+              <a href="blog/como-preparar-un-campamento-escolar.html">
+                <img src="assets/img/blog-1.jpg" alt="Cómo preparar un campamento escolar exitoso" />
+              </a>
+              <div class="media-card__body">
+                <h3>Cómo preparar un campamento escolar exitoso</h3>
+                <p>Consejos para docentes, coordinadores y familias.</p>
+                <a class="text-link" href="blog/como-preparar-un-campamento-escolar.html">Leer noticia</a>
+              </div>
+            </article>
+
+            <article class="media-card blog-card">
+              <a href="blog/que-llevar-a-una-salida-de-trekking.html">
+                <img src="assets/img/blog-2.jpg" alt="Qué llevar a una salida de trekking" />
+              </a>
+              <div class="media-card__body">
+                <h3>Qué llevar a una salida de trekking</h3>
+                <p>Checklist básico para una experiencia cómoda y segura.</p>
+                <a class="text-link" href="blog/que-llevar-a-una-salida-de-trekking.html">Leer noticia</a>
+              </div>
+            </article>
+
+            <article class="media-card blog-card">
+              <a href="blog/beneficios-fin-de-semana-naturaleza.html">
+                <img src="assets/img/blog-3.jpg" alt="Beneficios de un fin de semana en la naturaleza" />
+              </a>
+              <div class="media-card__body">
+                <h3>Beneficios de un fin de semana en la naturaleza</h3>
+                <p>Descanso real para familias y grupos en un entorno único.</p>
+                <a class="text-link" href="blog/beneficios-fin-de-semana-naturaleza.html">Leer noticia</a>
+              </div>
+            </article>
+
+            <article class="media-card blog-card">
+              <a href="blog/beneficios-fin-de-semana-naturaleza.html">
+                <img src="assets/img/blog-3.jpg" alt="Beneficios de un fin de semana en la naturaleza" />
+              </a>
+              <div class="media-card__body">
+                <h3>Beneficios de un fin de semana en la naturaleza</h3>
+                <p>Descanso real para familias y grupos en un entorno único.</p>
+                <a class="text-link" href="blog/beneficios-fin-de-semana-naturaleza.html">Leer noticia</a>
+              </div>
+            </article>
+            <article class="media-card blog-card">
+              <a href="blog/beneficios-fin-de-semana-naturaleza.html">
+                <img src="assets/img/blog-3.jpg" alt="Beneficios de un fin de semana en la naturaleza" />
+              </a>
+              <div class="media-card__body">
+                <h3>Beneficios de un fin de semana en la naturaleza</h3>
+                <p>Descanso real para familias y grupos en un entorno único.</p>
+                <a class="text-link" href="blog/beneficios-fin-de-semana-naturaleza.html">Leer noticia</a>
+              </div>
+            </article>
+            <article class="media-card blog-card">
+              <a href="blog/beneficios-fin-de-semana-naturaleza.html">
+                <img src="assets/img/blog-3.jpg" alt="Beneficios de un fin de semana en la naturaleza" />
+              </a>
+              <div class="media-card__body">
+                <h3>Beneficios de un fin de semana en la naturaleza</h3>
+                <p>Descanso real para familias y grupos en un entorno único.</p>
+                <a class="text-link" href="blog/beneficios-fin-de-semana-naturaleza.html">Leer noticia</a>
+              </div>
+            </article>
+
+            <article class="media-card blog-card">
+              <a href="blog/seguridad-y-planificacion-para-grupos.html">
+                <img src="assets/img/blog-4.jpg" alt="Seguridad y planificación para grupos" />
+              </a>
+              <div class="media-card__body">
+                <h3>Seguridad y planificación para grupos</h3>
+                <p>Buenas prácticas para una experiencia organizada y segura.</p>
+                <a class="text-link" href="blog/seguridad-y-planificacion-para-grupos.html">Leer noticia</a>
+              </div>
+            </article>
+          </div>
+          <button class="slider-arrow next" data-target="blogTrack" aria-label="Siguiente">›</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="reserveModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" type="button" data-close-modal aria-label="Cerrar">×</button>
+
+      <div class="modal-header">
+        <span class="eyebrow">Reserva online</span>
+        <h2 id="modalTitle">Reservar paquete</h2>
+        <p id="modalSubtitle">Seleccioná tus fechas y completá tus datos.</p>
+      </div>
+
+      <form id="reserveForm" class="reserve-form">
+        <input type="hidden" name="package_id" id="package_id" />
+        <input type="hidden" name="package_title" id="package_title" />
+        <input type="hidden" name="package_days" id="package_days" />
+        <input type="hidden" name="package_nights" id="package_nights" />
+        <input type="hidden" name="pricing_mode" id="pricing_mode" />
+        <input type="hidden" name="package_price" id="package_price" />
+        <input type="hidden" name="adult_price" id="adult_price" />
+        <input type="hidden" name="youth_price" id="youth_price" />
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="full_name">Nombre y apellido</label>
+            <input type="text" id="full_name" name="full_name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email del cliente</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Teléfono / WhatsApp</label>
+            <input type="text" id="phone" name="phone" required />
+          </div>
+
+          <div class="form-group">
+            <label for="guests">Cantidad total de personas</label>
+            <input type="number" id="guests" name="guests" min="1" required />
+          </div>
+
+          <div class="form-group" id="adultsGroup">
+            <label for="adults">Adultos</label>
+            <input type="number" id="adults" name="adults" min="0" value="0" />
+          </div>
+
+          <div class="form-group" id="youthGroup">
+            <label for="youth">Niños / jóvenes</label>
+            <input type="number" id="youth" name="youth" min="0" value="0" />
+          </div>
+
+          <div class="form-group">
+            <label for="checkin">Check-in</label>
+            <input type="date" id="checkin" name="checkin" required />
+            <small>Ingreso a las 11:00 hs</small>
+          </div>
+
+          <div class="form-group">
+            <label for="checkout">Check-out</label>
+            <input type="date" id="checkout" name="checkout" readonly required />
+            <small>Salida a las 10:00 hs</small>
+          </div>
+
+          <div class="form-group">
+            <label for="payment_type">Modalidad de pago</label>
+            <select id="payment_type" name="payment_type" required>
+              <option value="total">Pago total</option>
+              <option value="deposit_50">Seña del 50%</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="payment_method">Método de pago</label>
+            <select id="payment_method" name="payment_method" required>
+              <option value="mercadopago">MercadoPago</option>
+              <option value="transferencia">Transferencia</option>
+              <option value="efectivo">Efectivo</option>
+            </select>
+          </div>
+
+          <div class="form-group form-group--full">
+            <label for="notes">Observaciones</label>
+            <textarea
+              id="notes"
+              name="notes"
+              rows="4"
+              placeholder="Comentarios adicionales, horarios, necesidades del grupo, etc."
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="booking-summary">
+          <div>
+            <span>Paquete</span>
+            <strong id="summaryPackage">-</strong>
+          </div>
+          <div>
+            <span>Duración</span>
+            <strong id="summaryDuration">-</strong>
+          </div>
+          <div>
+            <span>Total</span>
+            <strong id="summaryTotal">-</strong>
+          </div>
+          <div>
+            <span>A pagar ahora</span>
+            <strong id="summaryDue">-</strong>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary btn-block" id="submitReservation">
+            Confirmar reserva
+          </button>
+        </div>
+
+        <div id="formResponse" class="form-response" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="includesModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-includes></div>
+
+    <div class="modal-dialog modal-dialog--small" role="dialog" aria-modal="true" aria-labelledby="includesTitle">
+      <button class="modal-close" type="button" data-close-includes aria-label="Cerrar">×</button>
+
+      <div class="modal-header">
+        <span class="eyebrow">Detalle del paquete</span>
+        <h2 id="includesTitle">Incluye</h2>
+      </div>
+
+      <div class="includes-content">
+        <ul id="includesList" class="includes-list"></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="videoModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-video></div>
+
+    <div class="modal-dialog modal-dialog--video" role="dialog" aria-modal="true" aria-labelledby="videoTitle">
+      <button class="modal-close" type="button" data-close-video aria-label="Cerrar">×</button>
+
+      <div class="modal-header">
+        <h2 id="videoTitle">Video</h2>
+      </div>
+
+      <div class="video-frame-wrap" id="videoFrameWrap"></div>
+    </div>
+  </div>
+
+    <center><footer class="site-footer">
+   
+
+   <div class="container footer-inner">
+      <div>
+        <strong>CAMPING DEL MONASTERIO</strong><br />
+        2026©Todos los Derechos Reservados. - Diseño y Desarrollo by 
+        
+        <a href="https://electronicagambino.com" target="_blank" rel="noopener">
+          Electrónica Gambino®
+        </a>
+      </div>
+
+      <nav class="footer-links" aria-label="Legales">
+        <center> 
+        <a href="#">Aviso Legal</a>
+        <span>|</span>
+        <a href="#">Política de Cookies</a>
+        <span>|</span>
+        <a href="#">Política de Privacidad</a>
+        <span>|</span>
+        <a href="#">Política de Venta</a>
+        <span>|</span>
+        <a href="#">Términos y Condiciones</a>
+        </center> 
+    </nav>
+      
+    </div>
+    
+  </footer></center> 
+
+  <script>
+    window.APP_CONFIG = {
+      reserveEndpoint: "reserve.php",
+      whatsappAdmin: "543816150488"
+    };
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
